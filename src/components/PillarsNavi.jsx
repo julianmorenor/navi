@@ -3,9 +3,11 @@ import GlassCard from './GlassCard';
 
 const PillarsNavi = () => {
     return (
-        <section className="container-fluid" style={{ backgroundColor: 'white', padding: '8rem 0', position: 'relative' }}>
+        <section className="container-fluid" style={{ backgroundColor: 'white', padding: '10rem 0 15rem', position: 'relative' }}>
             <div className="container text-center relative z-10">
-                <h2 className="font-display" style={{ fontSize: '2.2rem', marginBottom: '3rem' }}>Los Pilares de Navi</h2>
+                <h2 className="font-display" style={{ fontSize: '3rem', marginBottom: '4rem' }}>
+                    Los <i className="font-serif italic text-moss">Pilares</i> de Navi
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <GlassCard title="Vivencias" subtitle="Experiencias & Retiros" accent="var(--color-moss-core)" to="/experiences">
                         <p className="text-sm text-gray-600 mt-4">Espacios seguros para la transformation profunda.</p>
@@ -20,7 +22,7 @@ const PillarsNavi = () => {
             </div>
             {/* Bottom Gradient */}
             <div style={{
-                position: 'absolute', bottom: 0, left: 0, right: 0, height: '150px',
+                position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px',
                 background: 'linear-gradient(to bottom, transparent, var(--color-sand-light))',
                 pointerEvents: 'none',
                 zIndex: 2

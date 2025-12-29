@@ -93,51 +93,57 @@ const Hero = () => {
                     transition={{ delay: 0.8, duration: 0.8 }}
                     className="flex flex-col sm:flex-row gap-5 justify-center items-center mt-4"
                 >
+                    {/* VIVENCIAS: Moss background -> White background */}
                     <Motion.div
-                        whileHover={{ scale: 1.05, boxShadow: '0 15px 35px rgba(116, 133, 97, 0.3)' }}
-                        whileTap={{ scale: 0.95 }}
+                        whileHover={{
+                            y: -7,
+                            boxShadow: '0 20px 40px rgba(116, 133, 97, 0.4)'
+                        }}
+                        whileTap={{ scale: 0.98 }}
                         style={{ borderRadius: '50px' }}
                     >
                         <Link
                             to="/experiences"
-                            className="btn-primary"
+                            className="cta-button cta-vivencias"
                             style={{
                                 borderRadius: '50px',
-                                padding: '0.8rem 2.8rem',
-                                fontSize: '0.9rem',
-                                background: 'var(--color-moss-core)',
-                                border: 'none',
+                                padding: '1rem 3.2rem',
+                                fontSize: '0.95rem',
                                 textDecoration: 'none',
-                                display: 'inline-block'
+                                display: 'inline-block',
+                                fontWeight: 600,
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.12em',
+                                transition: 'all 0.4s ease'
                             }}
                         >
                             Vivencias
                         </Link>
                     </Motion.div>
 
+                    {/* BOTICARIO: White background -> Moss background */}
                     <Motion.div
-                        whileHover={{ scale: 1.05, boxShadow: '0 15px 35px rgba(116, 133, 97, 0.2)' }}
-                        whileTap={{ scale: 0.95 }}
+                        whileHover={{
+                            y: -7,
+                            boxShadow: '0 20px 40px rgba(116, 133, 97, 0.3)'
+                        }}
+                        whileTap={{ scale: 0.98 }}
                         style={{ borderRadius: '50px' }}
                     >
                         <Link
                             to="/shop"
+                            className="cta-button cta-boticario"
                             style={{
-                                padding: '0.8rem 2.8rem',
+                                padding: '1rem 3.2rem',
                                 borderRadius: '50px',
-                                border: '2px solid var(--color-moss-core)',
-                                color: 'var(--color-moss-core)',
                                 textDecoration: 'none',
                                 fontWeight: 700,
-                                fontSize: '0.9rem',
+                                fontSize: '0.95rem',
                                 textTransform: 'uppercase',
-                                letterSpacing: '0.1em',
+                                letterSpacing: '0.12em',
                                 display: 'inline-block',
-                                background: 'rgba(255, 255, 255, 0.5)',
-                                backdropFilter: 'blur(5px)',
-                                transition: 'all 0.3s ease'
+                                transition: 'all 0.4s ease'
                             }}
-                            className="hover:bg-moss hover:text-white"
                         >
                             Boticario
                         </Link>
@@ -171,9 +177,26 @@ const Hero = () => {
             </Motion.div>
 
             <style>{`
-                .hover\\:bg-moss:hover {
-                    background-color: var(--color-moss-core) !important;
+                .cta-vivencias {
+                    background: var(--color-moss-core) !important;
                     color: white !important;
+                    border: 2px solid var(--color-moss-core) !important;
+                }
+                .cta-vivencias:hover {
+                    background: white !important;
+                    color: var(--color-moss-core) !important;
+                }
+                .cta-boticario {
+                    background: white !important;
+                    color: var(--color-moss-core) !important;
+                    border: 2px solid var(--color-moss-core) !important;
+                }
+                .cta-boticario:hover {
+                    background: var(--color-moss-core) !important;
+                    color: white !important;
+                }
+                .cta-button {
+                    box-sizing: border-box;
                 }
             `}</style>
         </section>

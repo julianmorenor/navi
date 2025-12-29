@@ -9,9 +9,11 @@ const Testimonials = () => {
     ];
 
     return (
-        <section className="container-fluid" style={{ padding: '8rem 0', backgroundColor: 'var(--color-sand-light)', position: 'relative' }}>
+        <section className="container-fluid" style={{ padding: '10rem 0 15rem', backgroundColor: 'var(--color-sand-light)', position: 'relative' }}>
             <div className="container" style={{ position: 'relative' }}>
-                <h2 className="font-display text-center text-3xl mb-12 text-obsidian">Voces de la Comunidad</h2>
+                <h2 className="font-display text-center text-5xl mb-16 text-obsidian">
+                    Voces de la <i className="font-serif italic text-moss">Comunidad</i>
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.map((t, i) => (
                         <Motion.div
@@ -31,7 +33,7 @@ const Testimonials = () => {
             </div>
             {/* Bottom Gradient Transition to White */}
             <div style={{
-                position: 'absolute', bottom: 0, left: 0, right: 0, height: '150px',
+                position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px',
                 background: 'linear-gradient(to bottom, transparent, white)',
                 pointerEvents: 'none',
                 zIndex: 2
