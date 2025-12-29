@@ -9,8 +9,8 @@ const Testimonials = () => {
     ];
 
     return (
-        <section className="container-fluid" style={{ padding: '10rem 0 15rem', backgroundColor: 'var(--color-sand-light)', position: 'relative' }}>
-            <div className="container" style={{ position: 'relative' }}>
+        <section className="container-fluid" style={{ paddingTop: '7rem', paddingBottom: '5rem', backgroundColor: 'var(--color-sand-light)', position: 'relative' }}>
+            <div className="container" style={{ position: 'relative', zIndex: 10 }}>
                 <h2 className="font-display text-center text-5xl mb-16 text-obsidian">
                     Voces de la <i className="font-serif italic text-moss">Comunidad</i>
                 </h2>
@@ -33,10 +33,10 @@ const Testimonials = () => {
             </div>
             {/* Bottom Gradient Transition to White */}
             <div style={{
-                position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px',
+                position: 'absolute', bottom: 0, left: 0, right: 0, height: '180px',
                 background: 'linear-gradient(to bottom, transparent, white)',
                 pointerEvents: 'none',
-                zIndex: 2
+                zIndex: 1
             }}></div>
         </section>
     );

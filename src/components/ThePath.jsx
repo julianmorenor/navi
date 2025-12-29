@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const ThePath = () => {
     return (
-        <section className="container-fluid" style={{ padding: '10rem 0 20rem', position: 'relative', backgroundColor: 'var(--color-sand-light)' }}>
-            <div className="container" style={{ position: 'relative' }}>
+        <section className="container-fluid" style={{ paddingTop: '7rem', paddingBottom: '5rem', position: 'relative', backgroundColor: 'var(--color-sand-light)' }}>
+            <div className="container" style={{ position: 'relative', zIndex: 10 }}>
                 {/* Decorative Background Elements */}
                 <div style={{ position: 'absolute', left: 0, top: '20%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(161, 173, 148, 0.1) 0%, rgba(0,0,0,0) 70%)', zIndex: -1 }}></div>
 
@@ -99,16 +99,16 @@ const ThePath = () => {
                 </div>
             </div>
 
-            {/* Bottom Gradient for Smooth Transition - Moved outside container for better positioning */}
+            {/* Bottom Gradient for Smooth Transition */}
             <div style={{
                 position: 'absolute',
                 bottom: 0,
                 left: 0,
                 right: 0,
-                height: '300px',
+                height: '180px',
                 background: 'linear-gradient(to bottom, transparent, white)',
                 pointerEvents: 'none',
-                zIndex: 2
+                zIndex: 1
             }}></div>
         </section>
     );

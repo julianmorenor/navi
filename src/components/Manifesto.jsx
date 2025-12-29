@@ -13,7 +13,7 @@ const Manifesto = () => {
             position: 'relative',
             padding: '10rem 0'
         }}>
-            <div className="container" style={{ position: 'relative', zIndex: 1, marginTop: '-5vh' }}>
+            <div className="container" style={{ position: 'relative', zIndex: 10, marginTop: '-5vh' }}>
                 <h3 className="font-display text-moss" style={{ fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '2.5rem' }}>
                     Manifiesto
                 </h3>
@@ -24,10 +24,10 @@ const Manifesto = () => {
             </div>
             {/* Bottom Gradient Transition to Footer (sand-light) */}
             <div style={{
-                position: 'absolute', bottom: -1, left: 0, right: 0, height: '100px',
+                position: 'absolute', bottom: -1, left: 0, right: 0, height: '180px',
                 background: 'linear-gradient(to bottom, transparent, var(--color-sand-light))',
                 pointerEvents: 'none',
-                zIndex: 2
+                zIndex: 1
             }}></div>
         </section>
     );
